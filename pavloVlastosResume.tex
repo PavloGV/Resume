@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Settings
+\documentclass[paper=a4,fontsize=11pt]{article} % KOMA-article class
+
+\usepackage[english]{babel}         % Language
+\usepackage{graphicx}               % Enable pdflatex
+\usepackage[nomessages]{fp}         % For automatic column margin adjustments
+\usepackage[left=2cm, right=2cm, top=2cm]{geometry} % Set margins
+
+\renewcommand{\rmdefault}{phv}      % Arial
+\renewcommand{\sfdefault}{phv}      % Arial
+
+\def \sectionSpace      {0.3cm}     % Space between sections
+\def \leftColSpace      {0.125}     % Space for left column
+\def \middleColSpace    {0.75}      % Space for middle column
+\def \bigMiddleColSpace {0}         % Space for middle column
+\def \colOffset         {.15}       % Offset space for middle column
+\FPeval{\bigMiddleColSpace}{clip(\middleColSpace+\colOffset)}
+
+\def \rightColSpace     {0.175}     % Space for right column
+\def \lineWidth         {18cm}      % Line width for separating sections
+\def \lineThickness     {2pt}       % Line thickness for separating
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Contact
+\noindent
+\begin{minipage}[c]{0.6\linewidth}
+\begin{flushleft}
+\noindent {\fontsize{30}{36}\selectfont \textbf{Pavlo Vlastos}}\\
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[c]{0.1\linewidth}
+\begin{flushleft}
+\noindent \textbf{E-mail}:\\
+\noindent \textbf{Website}:\\
+\noindent \textbf{Phone}:\\
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[c]{0.4\linewidth}
+\begin{flushleft}
+\noindent pvlastos@ucsc.edu\\
+\noindent pavlogv.org, github.com/PavloGV\\
+\noindent 1 (307) 797-0475\\
+\end{flushleft}
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\vspace{\sectionSpace}
+\noindent\rule{\lineWidth}{\lineThickness}
+\noindent
+\begin{minipage}[t]{\leftColSpace\linewidth}
+\begin{flushleft}
+\noindent \textbf{Skills}\\
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{\bigMiddleColSpace\linewidth}
+\begin{flushleft}
+\noindent \textbf{Software Engineering}: C, C++, Python, Assembly, Matlab, OpenCV, PIC32, Events and Service Framework, MPLABX IDE, A-star search, Alpha-Beta Pruning, Hierarchical state machines, Linux, Windows, MacOS.\\
+
+\vspace{\sectionSpace}
+\noindent \textbf{Robotics}: Extended Kalman Filters, Gauss-Markov Processes, Optimal Estimation, Attitude Estimation, State Space, Feedback Control, Lyapunov stability, Optimal Control, (Inverse) Kinematics, Transformation matrices, Quantized measurements, Denavit-Hartenberg parameters, Convex Optimization, Dynamic Programming, Linear Programming.\\
+
+\vspace{\sectionSpace}
+\noindent \textbf{Embedded Systems}: PIC, CAN, I2C, UART, SPI, sensor integration, protocol debugging hardware\\
+
+\vspace{\sectionSpace}
+\noindent \textbf{Computer Engineering}: Computer Architecture, Logic Design
+
+\vspace{\sectionSpace}
+\noindent \textbf{Design Tools}: Solid Works, Eagle CAD, Fusion 360.
+
+\vspace{\sectionSpace}
+\noindent \textbf{Hardware Sensors \& Actuators}: Inertial Measurement Units (IMUs), Gyros, Encoders, Flex Sensors, Ping Sensors, Thermistors (NTC), Capacitive touch sensors, Infrared Radiation sensors, Track-wire sensors, ADC, DAC, DC motors, AC motors, servos, Buck-Boost regulators.
+
+\vspace{\sectionSpace}
+\noindent \textbf{Tools}: Oscilloscopes, Logic Analyzers, Data Acquisition Devices
+\end{flushleft}
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\vspace{\sectionSpace}
+\noindent
+\begin{minipage}[t]{\leftColSpace\linewidth}
+\begin{flushleft}
+\noindent \textbf{Education}\\
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{\bigMiddleColSpace\linewidth}
+\begin{flushleft}
+\noindent The University of California at Santa Cruz\\
+\noindent 2018 - PhD student in the Electrical and Computer Engineering Department researching optimal estimation and control for autonomous vehicles\\
+\noindent 2017 - BS in Robotics Engineering\\
+\end{flushleft}
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Work Experience
+\vspace{\sectionSpace}
+\noindent
+\begin{minipage}[t]{\leftColSpace\linewidth}
+\begin{flushleft}
+\noindent \textbf{Work\\Experience}\\
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{\middleColSpace\linewidth}
+\begin{flushleft}
+\noindent \textbf{The University of California at Santa Cruz} - Teaching Assistant\\
+\noindent Mechatronics, Embedded C Programming on Microcontrollers and Digital Sensors\\
+\noindent \textbf{Inboard Technologies} - Intern \hfill \\
+\noindent Tutor for Mechatronics\\
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{\rightColSpace\linewidth}
+\begin{flushleft}
+\noindent \textbf{Oct 2017 - Dec 2018}
+\\[2\baselineskip]
+\noindent \textbf{Summer 2017}
+\end{flushleft}
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Projects
+\vspace{\sectionSpace}
+\noindent
+\begin{minipage}[t]{\leftColSpace\linewidth}
+\begin{flushleft}
+\noindent \textbf{Projects}\\
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{\middleColSpace\linewidth}
+\begin{flushleft}
+%
+\end{flushleft}
+\end{minipage}
+
+\end{document}
