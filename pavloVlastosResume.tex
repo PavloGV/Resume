@@ -22,8 +22,8 @@
 \def \rightColSpace     {0.25}      % Space for right column
 \def \lineWidth         {18cm}      % Line width for separating sections
 \def \lineThickness     {2pt}       % Line thickness for separating
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document} 
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -36,11 +36,13 @@
     \noindent \textbf{E-mail}:\\
     \noindent \textbf{Website}:\\
     \noindent \textbf{Phone}:\\
+    \noindent \textbf{Location}:\\
     \end{minipage}
     \begin{minipage}[c]{0.4\linewidth}
     \noindent pvlastos@ucsc.edu\\
     \noindent pavlogv.org, github.com/PavloGV\\
     \noindent 1 (307) 797-0475\\
+    \noindent Santa Cruz, California\\
     \end{minipage}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -52,17 +54,19 @@
     \end{minipage}
     \begin{minipage}[t]{\bigMiddleColSpace\linewidth}
         \begin{flushleft}
-            \noindent \textbf{Software Engineering}: C, C++, Python, Assembly, Matlab, OpenCV, PIC32, Events and Service Framework, MPLABX IDE, A-star search, Alpha-Beta Pruning, Hierarchical state machines, Linux, Windows, MacOS, \LaTeX.\\
+            \noindent \textbf{Software Engineering}: C, C++, Python, LC3 Assembly, MIPS, MATLAB, Event-Driven Programming, Hierarchical state machines, Linux.\\
             \vspace{\subSectionSpace}
-            \noindent \textbf{Robotics}: Extended Kalman Filters, Gauss-Markov Processes, Optimal Estimation, Attitude Estimation, State Space, Feedback Control, Lyapunov Stability, Optimal Control, (Inverse) Kinematics, Transformation matrices, Quantized measurements, Denavit-Hartenberg parameters, Convex Optimization, Dynamic Programming, Linear Programming.\\
+            \noindent \textbf{Robotics}: Kalman Filters, Optimal Estimation, Attitude Estimation, Feedback Control, Optimal Control, (Inverse) Kinematics, Denavit-Hartenberg parameters, Convex Optimization, Dynamic Programming, Linear Programming, Sensor fusion.\\
             \vspace{\subSectionSpace}
-            \noindent \textbf{Embedded Systems}: PIC, CAN, I2C, UART, SPI, sensor integration, protocol debugging hardware.\\
+            \noindent \textbf{Embedded Systems}: CAN, I2C, UART, SPI, ADC, DAC, sensor integration.\\
             \vspace{\subSectionSpace}
             \noindent \textbf{Computer Engineering}: Computer Architecture, Logic Design.\\
             \vspace{\subSectionSpace}
-            \noindent \textbf{Design Tools}: SolidWorks, Eagle CAD, Fusion 360.\\
+            \noindent \textbf{Algorithms}: A-star search, Alpha-Beta Pruning, Merge Sort, Binary Search.\\
             \vspace{\subSectionSpace}
-            \noindent \textbf{Hardware Sensors \& Actuators}: Inertial Measurement Units (IMUs), Gyros, Encoders, Flex Sensors, Ping Sensors, Thermistors (NTC), Capacitive touch sensors, Infrared Radiation sensors, Track-wire sensors, ADC, DAC, brushed \& brush-less DC motors, AC motors, servos, Buck-Boost regulators, dynamo-meter.\\
+            \noindent \textbf{Design Tools}: SolidWorks, Eagle CAD, Fusion 360, MPLABX IDE.\\
+            \vspace{\subSectionSpace}
+            \noindent \textbf{Hardware Sensors \& Actuators}: Inertial Measurement Units (IMUs), Gyros, Encoders, Flex Sensors, Ping Sensors, Thermistors (NTC), Capacitive touch sensors, Infrared Radiation sensors, Track-wire sensors, brushed \& brush-less DC motors, AC motors, servos, Buck-Boost regulators, dynamo-meter.\\
             \vspace{\subSectionSpace}
             \noindent \textbf{Tools}: Oscilloscopes, Logic Analyzers, Data Acquisition Devices.\\
         \end{flushleft}
@@ -71,12 +75,14 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Education
     \vspace{\sectionSpace}
+
+    %%%% Phd Student
     \noindent
     \begin{minipage}[t]{\leftColSpace\linewidth}
         \noindent \textbf{Education}
     \end{minipage}
     \begin{minipage}[t]{\middleColSpace\linewidth}
-        \noindent \textbf{PhD Student - Computer Engineering}
+        \noindent \textbf{PhD Student in Computer Engineering}
     \end{minipage}
     \begin{minipage}[t]{\rightColSpace\linewidth}
         \noindent \textbf{Oct 2017 - Current}
@@ -87,22 +93,23 @@
     \begin{minipage}[t]{\bigMiddleColSpace\linewidth}
         \noindent The University of California at Santa Cruz
         \begin{itemize}[noitemsep,topsep=0pt]
-            \item Emphasis in Robotics
-            \item Researching autonomous surface vehicles using optimal estimation, optimal control and quantized measurements.
+            \item Emphasis in Robotics \& Control
+            \item Researching autonomous surface vehicles using optimal estimation, optimal control, quantized measurements for observation and tracking of propagating surface phenomena.
             \item Designing custom CAN node PCBs for CAN-bus-controlled autonomous boat
             \item Designing feedback control systems for boat actuators
-            \item Implementing path-planning in C
-            \item Simulating dynamics in Matlab
+            \item Implementing oceanographic sensor platform in C, C++
+            \item Simulating dynamics in MATLAB
         \end{itemize}
     \end{minipage}
 
+    %%%% BS Robotics Engineering
     \noindent
     \begin{minipage}[t]{\leftColSpace\linewidth}
         \hfill
     \end{minipage}
     \begin{minipage}[t]{\middleColSpace\linewidth}
         \vspace{\subSectionSpace}
-        \noindent \textbf{B.S. - Robotics Engineering}
+        \noindent \textbf{BS in Robotics Engineering}
     \end{minipage}
     \begin{minipage}[t]{\rightColSpace\linewidth}
         \vspace{\subSectionSpace}
@@ -123,6 +130,8 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Work Experience
     \vspace{\sectionSpace}
+
+    %%%% UC Santa Cruz
     \noindent
     \begin{minipage}[t]{\leftColSpace\linewidth}
         \noindent \textbf{Work}
@@ -140,15 +149,16 @@
     \end{minipage}
     \begin{minipage}[t]{\bigMiddleColSpace\linewidth}
         \begin{flushleft}
-        \noindent Taught the following classes:
         \begin{itemize}[noitemsep,topsep=0pt]
-            \item \textbf{Mechatronics}: Students are tasked with making robot and analog sensors from scratch. Programming of hierarchical statemachine to govern robot behavior is done in C. Events and service framework developed at Stanford is taught to students. Robots use PIC32 microcontroller, bootloaed by DS30 Loader.
-            \item \textbf{Digital Sensors}: Students are taught how to interface with digital sensors and other peripherals. Subject content includes calibration and implementation of inertial measurment units, encoders, and ping sensors. Students write C code on PIC32 microcontroller to digitally filter out noise and calibrate sensors. IMU calibration is done using least-squares, triad, and other methods. 
+            \item \textbf{Mechatronics}: Students are tasked with making robot and analog sensors from scratch. Programming of hierarchical state machine (HSM)to govern robot behavior is done in C. Events and service framework developed at Stanford is taught to students. Robots use PIC32 microcontroller, boot-loaded by DS30 Loader.
+            \item \textbf{Sensing and Sensor Technology}: Students are taught how to interface with digital sensors and other peripherals. Subject content includes calibration and implementation of inertial measurment units, encoders, and ping sensors. Students write C code on PIC32 microcontroller to digitally filter out noise and calibrate sensors.
             \item \textbf{Embedded C Programming on Microcontrollers}: Students are taught C syntax, data structures, interrupt subroutines, sorting algorithms, sensor debouncing, and system integration. 
         \end{itemize}
         \end{flushleft}
     \end{minipage}
-    \newpage
+
+    \filbreak
+    %%%% Inboard Technologies     
     \noindent
     \begin{minipage}[t]{\leftColSpace\linewidth}
         \hfill
@@ -169,12 +179,14 @@
         \hfill
     \end{minipage}
     \begin{minipage}[t]{\bigMiddleColSpace\linewidth}
-        Helped test and repair lithium-ion batteries used for powering brush-less DC motors. Helped design, build, and program a Dynamo-meter test-rig for board testing. Dynamo-meter tested, motor torque, board vibration, and simulated acceleration.
+        Helped test and repair lithium-ion batteries used for powering brush-less DC motors. Helped design, build, and program a Dynamo-meter test-rig for board testing. Dynamo-meter tested, motor torque, board vibration, and simulated acceleration.\\
     \end{minipage}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Projects
-    \vspace{\sectionSpace}
+
+    %%%% Ball Balancing Robot
+    % \vspace{\sectionSpace}
     \noindent
     \begin{minipage}[t]{\leftColSpace\linewidth}
         \noindent \textbf{Projects}
@@ -195,6 +207,9 @@
         \hfill
     \end{minipage}
     \begin{minipage}[t]{\bigMiddleColSpace\linewidth}
-        Designed, built, programmed, and tested a robot capable of balancing on top of a ball. Programmed PID controllers in C for closed-loop motor torque control. 
+        Designed, built, programmed, and tested a robot capable of balancing on top of a ball. Programmed PID controllers in C for closed-loop motor torque control. \\
     \end{minipage}
+    \vspace{\sectionSpace}
+    %\noindent \textbf{Additional Keywords}: Gauss-Markov Processes, Lyapunov Stability, Quantized measurements, Least-Squares.\\
 \end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
