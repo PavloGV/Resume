@@ -1,2 +1,4 @@
 # ignore generated pdf files
 *.pdf
+*.aux
+*.log
