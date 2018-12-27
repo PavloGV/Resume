@@ -2,15 +2,18 @@
 % Settings
 \documentclass[paper=a4,fontsize=11pt]{article} % KOMA-article class
 
-\usepackage[english]{babel}         % Language
-\usepackage{graphicx}               % Enable pdflatex
-\usepackage{enumitem}               % For eliminating white space for itemize
-\usepackage{nopageno}               % Get rid of page number
+\usepackage[english]{babel}     % Language
+% \usepackage{lualatex}           % Enable lualatex since PDFlatex can't Calibri
+\usepackage{graphicx}           % Enable pdflatex
+\usepackage{enumitem}           % For eliminating white space for itemize
+\usepackage{nopageno}           % Get rid of page number
 \usepackage[left=0.75cm, right=0.75cm, top=0.25cm, bottom= 0.25cm]{geometry} % Set margins
 
-\renewcommand{\rmdefault}{phv}      % Arial
-\renewcommand{\sfdefault}{phv}      % Arial
-
+% \usepackage{fontspec}
+% \setmainfont{Calibri}               % use Calibri font
+\usepackage{gfsdidot}
+\usepackage[T1]{fontenc}
+               
 \def \sectionSpace      {0.3cm}    % Space between sections
 \def \subSectionSpace   {0.25cm}     % Space between sections
 \def \leftColSpace      {0.1}       % Space for left column
@@ -33,7 +36,7 @@
     \noindent \\
     \noindent \\
     \noindent \\
-    \noindent {\fontsize{50}{60}\selectfont \textbf{Pavlo Vlastos}}
+    \noindent {\fontsize{30}{36}\selectfont \textbf{Pavlo Vlastos}}
     \end{minipage}
     \begin{minipage}[b]{0.1\linewidth}
     \noindent \textbf{E-mail}:\\
@@ -49,6 +52,20 @@
     \end{minipage}
     \vspace{-0.725cm}
 
+    \vspace{\sectionSpace}
+    \noindent\rule{\lineWidth}{\lineThickness}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Quick Summary
+
+    \noindent
+    \begin{minipage}[t]{\leftColSpace\linewidth}
+        \noindent \textbf{Summary}
+    \end{minipage}
+    \begin{minipage}[t]{\bigMiddleColSpace\linewidth}
+        \noindent Robotics engineer capable of software developement for embedded systems and control theory. Positive work mentality, strong communication, and teamwork skills.
+    \end{minipage}
+
+    \vspace{\sectionSpace}
     \noindent\rule{\lineWidth}{\lineThickness}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Education
@@ -102,6 +119,7 @@
     \end{minipage}
     \vspace{-0.275cm}
 
+    \vspace{\sectionSpace}
     \noindent\rule{\lineWidth}{\lineThickness}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Work Experience
@@ -153,30 +171,7 @@
         Helped test and repair lithium-ion batteries used for powering brush-less DC motors. Helped design, build, and program a Dynamo-meter test-rig for board testing. Dynamo-meter tested, motor torque, board vibration, and simulated acceleration.
     \end{minipage}
     
-    %%%% Tutor
-    \vspace{\subSectionSpace}
-    \noindent
-    \begin{minipage}[t]{\leftColSpace\linewidth}
-        % \vspace{\subSectionSpace}
-        \noindent \hfill
-    \end{minipage}
-    \begin{minipage}[t]{\middleColSpace\linewidth}
-        % \vspace{\subSectionSpace}
-        \noindent \textbf{Mechatronics Tutor} \quad UC Santa Cruz
-    \end{minipage}
-    \begin{minipage}[t]{\rightColSpace\linewidth}
-        % \vspace{\subSectionSpace}
-        \noindent \textbf{Oct 2017 - Dec 2018}
-    \end{minipage}
-
-    \noindent
-    \begin{minipage}[t]{\leftColSpace\linewidth}
-        \hfill
-    \end{minipage}
-    \begin{minipage}[t]{\bigMiddleColSpace\linewidth}
-        Helped teach students about mechatronic design, project management, debouncing sensors, debugging analog infrared sensing circuits, and debugging hierarchical state machines for robot behavior.
-    \end{minipage}
-
+    \vspace{\sectionSpace}
     \noindent\rule{\lineWidth}{\lineThickness}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Projects
@@ -201,7 +196,7 @@
         Designed, built, programmed, and tested a robot capable of balancing on top of a ball. Programmed PID controllers in C for closed-loop motor torque control. Implemented multiple system models in testing. Robot used IMU and motor encoders in feedback.
     \end{minipage}
 
-     %%%% Mechatronics Robot
+    %%%% Mechatronics Robot
     \vspace{\subSectionSpace}  
     \noindent
     \begin{minipage}[t]{\leftColSpace\linewidth}
@@ -223,6 +218,7 @@
         Created tape-following robot programmed in C, using hierarchical state machine (HSM). Designed and soldered sensors. Used event driven programming. Robot detected tape, 2.0kHz infrared, and 27kHz track-wire.
     \end{minipage}
 
+    \vspace{\sectionSpace}
     \noindent\rule{\lineWidth}{\lineThickness}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Skills
@@ -232,9 +228,6 @@
     \noindent \textbf{Skills}\\
     \end{minipage}
     \begin{minipage}[t]{\bigMiddleColSpace\linewidth}
-            \noindent Over the past 5 years, I've acquired and refined my skills by doing various projects in academia, industry, and for fun. I currently exercise the following skills on a daily basis for my research on autonomous surface vehicles. 
-            
-            \vspace{\subSectionSpace}
             \noindent \textbf{Software Engineering}: Embedded C, C++, Python, LC3 Assembly, MIPS, MATLAB, Event-Driven Programming, Hierarchical state machines, Linux.
             
             \vspace{\subSectionSpace}
@@ -254,9 +247,6 @@
             
             \vspace{\subSectionSpace}
             \noindent \textbf{Hardware Sensors \& Actuators}: Inertial Measurement Units (IMUs), Gyros, Encoders, Flex Sensors, Ping Sensors, Thermistors (NTC), Capacitive touch sensors, Infrared Radiation sensors, Track-wire sensors, brushed \& brush-less DC motors, AC motors, servos, Buck-Boost regulators, dynamo-meter.
-
-            \vspace{\subSectionSpace}
-            \noindent \textbf{Tools}: Oscilloscopes, Logic Analyzers, Data Acquisition Devices.
     \end{minipage}
     %\vspace{\sectionSpace}
     %\noindent \textbf{Additional Keywords}: Gauss-Markov Processes, Lyapunov Stability, Quantized measurements, Least-Squares.\\
