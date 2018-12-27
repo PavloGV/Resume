@@ -1,5 +1,5 @@
 all:
-	pdflatex pavloVlastosResume.tex
+	xelatex pavloVlastosResume.tex
 
 clean:
 	rm pavloVlastosResume.aux pavloVlastosResume.log

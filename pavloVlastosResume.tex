@@ -3,28 +3,25 @@
 \documentclass[paper=a4,fontsize=11pt]{article} % KOMA-article class
 
 \usepackage[english]{babel}     % Language
-% \usepackage{lualatex}           % Enable lualatex since PDFlatex can't Calibri
+\usepackage{fontspec}
 \usepackage{graphicx}           % Enable pdflatex
 \usepackage{enumitem}           % For eliminating white space for itemize
 \usepackage{nopageno}           % Get rid of page number
 \usepackage[left=0.75cm, right=0.75cm, top=0.25cm, bottom= 0.25cm]{geometry} % Set margins
 
-% \usepackage{fontspec}
-% \setmainfont{Calibri}               % use Calibri font
-\usepackage{gfsdidot}
-\usepackage[T1]{fontenc}
+\setmainfont[Mapping=text-tex]{Calibri}
                
-\def \sectionSpace      {0.3cm}    % Space between sections
-\def \subSectionSpace   {0.25cm}     % Space between sections
+\def \sectionSpace      {0.3cm}     % Space between sections
+\def \subSectionSpace   {0.25cm}    % Space between sections
 \def \leftColSpace      {0.1}       % Space for left column
-\def \middleColSpace    {0.71}       % Space for middle column
+\def \middleColSpace    {0.71}      % Space for middle column
 \def \bigMiddleColSpace {0.8}       % Space for middle column
 \def \colOffset         {0.2}       % Offset space for middle column
 % \FPeval{\bigMiddleColSpace}{clip(\middleColSpace+\colOffset)}
 
 \def \rightColSpace     {0.25}      % Space for right column
 \def \lineWidth         {20.25cm}   % Line width for separating sections
-\def \lineThickness     {1pt}     % Line thickness for separating
+\def \lineThickness     {1pt}       % Line thickness for separating
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document} 
