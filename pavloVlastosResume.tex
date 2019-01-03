@@ -14,7 +14,7 @@
 
 \setmainfont[Mapping=text-tex]{Calibri}
                
-\def \sectionSpace   {0.009\textheight} % Space between sections
+\def \sectionSpace   {0.006\textheight} % Space between sections
 \def \subSectionSpace{0.003\textheight} % Space between sections
 \def \leftColSpace      {0.1\textwidth} % Space for left column
 \def \bulletSpace  {0.05\textwidth}     % Space for bullet point column
@@ -50,186 +50,97 @@
     \noindent 1 (307) 797-0475\\
     \noindent Santa Cruz, California
     \end{minipage}
-    \vspace{-0.725cm}
-
     \vspace{\sectionSpace}
     \noindent\rule{\textwidth}{\lineThickness}
+
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Quick Summary
-
-    \noindent
-    \begin{minipage}[t]{\leftColSpace}
-        \noindent \textbf{Summary}
-    \end{minipage}
-    \begin{minipage}[t]{\bigMiddleColSpace}
-        \noindent Robotics engineer capable of software developement for embedded systems and control theory. Positive work mentality, strong communication, and teamwork skills. Passionate about solving problems.
-    \end{minipage}
-
+    \begin{longtable}[l]{p{\leftColSpace} p{\restOfColSpace}}
+        Summary & Robotics engineer capable of software developement for embedded systems and control theory. Positive work mentality, strong communication, and teamwork skills. Passionate about solving problems.\\
+    \end{longtable}
     \vspace{\sectionSpace}
     \noindent\rule{\textwidth}{\lineThickness}
+
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Education
 
     %%%% Phd Student
-    \noindent
-    \begin{minipage}[t]{\leftColSpace}
-        \noindent \textbf{Education}
-    \end{minipage}
-    \begin{minipage}[t]{\middleColSpace}
-        \noindent \textbf{PhD Student in Computer Engineering} \quad The University of California at Santa Cruz
-    \end{minipage}
-    \begin{minipage}[t]{\rightColSpace}
-        \noindent \textbf{Oct 2017 - Current}
-    \end{minipage}
-    \begin{minipage}[t]{\leftColSpace}
-        \hfill
-    \end{minipage}
-    \begin{minipage}[t]{\bigMiddleColSpace}
-        \begin{itemize}[noitemsep,topsep=0pt]
-            \item Emphasis in Robotics \& Control
-            \item Researching autonomous surface vehicles using optimal estimation, optimal control, quantized measurements for observation and tracking of propagating surface phenomena.
-            \item Designing custom CAN node PCBs for CAN-bus-controlled autonomous boat
-            \item Designing feedback control systems for boat actuators
-            \item Implementing oceanographic sensor platform in C, C++
-            \item Simulating dynamics in MATLAB
-        \end{itemize}
-    \end{minipage}
+    \begin{longtable}[l]{p{\leftColSpace} p{\middleColSpace} p{\rightColSpace}}
+        Education & \textbf{PhD Student in Computer Engineering} \quad The University of California at Santa Cruz & \textbf{Oct 2013 - Jun 2017} \\
+    \end{longtable}
+    \begin{longtable}[l]{p{\leftColSpace} p{0.0\textwidth} p{\restOfColSpace}}
+        & \textbullet\ &  Emphasis in Robotics \& Control\\
+        & \textbullet\ &  Researching autonomous surface vehicles using optimal estimation, optimal control, quantized measurements for observation and tracking of propagating surface phenomena.\\
+        & \textbullet\ & Designing custom CAN node PCBs for CAN-bus-controlled autonomous boat\\
+        & \textbullet\ &  Designing feedback control systems for boat actuators\\
+        & \textbullet\ & Implementing oceanographic sensor platform in C, C++\\
+        & \textbullet\ & Simulating dynamics in MATLAB\\
+    \end{longtable}
+    \vspace{\sectionSpace}
 
     %%%% BS Robotics Engineering
-    \vspace{\sectionSpace}
-    \noindent
-    \begin{minipage}[t]{\leftColSpace}
-        \hfill
-    \end{minipage}
-    \begin{minipage}[t]{\middleColSpace}
-        \noindent \textbf{BS in Robotics Engineering} \quad The University of California at Santa Cruz
-    \end{minipage}
-    \begin{minipage}[t]{\rightColSpace}
-        \noindent \textbf{Oct 2013 - Jun 2017}
-    \end{minipage}
-
-    \noindent
-    \begin{minipage}[t]{\leftColSpace}
-        \hfill
-    \end{minipage}
-    \begin{minipage}[t]{\bigMiddleColSpace}
-        \begin{itemize}[noitemsep,topsep=0pt]
-            \item Emphasis in digital feedback control
-        \end{itemize}
-    \end{minipage}
-    \vspace{-0.275cm}
-
+    \begin{longtable}[l]{p{\leftColSpace} p{\middleColSpace} p{\rightColSpace}}
+        & \textbf{BS in Robotics Engineering} \quad The University of California at Santa Cruz & \textbf{Oct 2013 - Jun 2017} \\
+    \end{longtable}
+    \begin{longtable}[l]{p{\leftColSpace} p{0.0\textwidth} p{\restOfColSpace}}
+        & \textbullet\ &  Emphasis in digital feedback control\\
+    \end{longtable}
     \vspace{\sectionSpace}
     \noindent\rule{\textwidth}{\lineThickness}
+
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Projects
 
     %%%% Autonomous Boat
-    \noindent
-    \begin{minipage}[t]{\leftColSpace}
-        \noindent \textbf{Projects}
-    \end{minipage}
-    \begin{minipage}[t]{\middleColSpace}
-        \noindent \textbf{Autonomous Boat} \quad PhD Project
-    \end{minipage}
-    \begin{minipage}[t]{\rightColSpace}
-        \noindent \textbf{Spring 2018 - current}
-    \end{minipage}
-
-    \noindent
-    \begin{minipage}[t]{\leftColSpace}
-        \hfill
-    \end{minipage}
-    \begin{minipage}[t]{\bigMiddleColSpace}
-        \begin{itemize}[noitemsep,topsep=0pt]
-        \item Utilize CAN bus, custom CAN-node pcb designs and PIC32
-        \item $\text{L}_2^+$ guidance algorithm
-        \item Sensor fusion of GPS, IMU
-        \item Uncertainty suppression
-        \end{itemize}
-    \end{minipage}
-
-    %%%% Ball Balancing Robot
+    \begin{longtable}[l]{p{\leftColSpace} p{\middleColSpace} p{\rightColSpace}}
+        Projects & \textbf{Autonomous Boat} \quad PhD Project & \textbf{Spring 2018 - current} \\
+    \end{longtable}
+    \begin{longtable}[l]{p{\leftColSpace} p{0.0\textwidth} p{\restOfColSpace}}
+        & \textbullet\ &  Utilize CAN bus, custom CAN-node pcb designs and PIC32\\
+        & \textbullet\ & $\text{L}_2^+$ guidance algorithm\\
+        & \textbullet\ & Sensor fusion of GPS and IMU\\
+        & \textbullet\ & Uncertainty suppression\\
+    \end{longtable}
     \vspace{\sectionSpace}
-    \noindent
-    \begin{minipage}[t]{\leftColSpace}
-        \noindent \hfill
-    \end{minipage}
-    \begin{minipage}[t]{\middleColSpace}
-        \noindent \textbf{Ball Balancing Robot } \quad Senior Design Project
-    \end{minipage}
-    \begin{minipage}[t]{\rightColSpace}
-        \noindent \textbf{Jan 2017 - May 2017}
-    \end{minipage}
-
-    \noindent
-    \begin{minipage}[t]{\leftColSpace}
-        \hfill
-    \end{minipage}
-    \begin{minipage}[t]{\bigMiddleColSpace}
-        \begin{itemize}[noitemsep,topsep=0pt]
-        \item Developed a robot capable of balancing on top of a ball. 
-        \item Programmed PID controllers in C for closed-loop motor torque control. 
-        \item Implemented multiple system models in testing. 
-        \item Robot used IMU and motor encoders for feedback.
-        \end{itemize}
-    \end{minipage}
-
+    %%%% Ball Balancing Robot
+    \begin{longtable}[l]{p{\leftColSpace} p{\middleColSpace} p{\rightColSpace}}
+         & \textbf{Ball Balancing Robot } \quad Senior Design Project & \textbf{Jan 2017 - May 2017} \\
+    \end{longtable}
+    \begin{longtable}[l]{p{\leftColSpace} p{0.0\textwidth} p{\restOfColSpace}}
+        & \textbullet\ & Developed a robot capable of balancing on top of a ball.\\
+        & \textbullet\ & Programmed PID controllers in C for closed-loop motor torque control.\\
+        & \textbullet\ & Implemented multiple system models in testing.\\
+        & \textbullet\ & Robot used IMU and motor encoders for feedback.\\
+    \end{longtable}
+    \vspace{\sectionSpace}
     %%%% Mechatronics Robot
-    \vspace{\sectionSpace}  
-    \noindent
-    \begin{minipage}[t]{\leftColSpace}
-        \noindent \hfill
-    \end{minipage}
-    \begin{minipage}[t]{\middleColSpace}
-        \noindent \textbf{Fully Autonomous Robot} \quad Mechatronics Class
-    \end{minipage}
-    \begin{minipage}[t]{\rightColSpace}
-        \noindent \textbf{Jan 2017 - May 2017}
-    \end{minipage}
-
-    \noindent
-    \begin{minipage}[t]{\leftColSpace}
-        \hfill
-    \end{minipage}
-    \begin{minipage}[t]{\bigMiddleColSpace}
-        \begin{itemize}[noitemsep,topsep=0pt]
-        \item Created tape-following robot programmed in C, using hierarchical state machine (HSM). 
-        \item Designed and soldered sensors. Used event driven programming. 
-        \item Robot detected tape, 2.0kHz infrared, and 27kHz track-wire.\item Robot navigated to ping-pong balls, loaded balls, and shot target.
-        \end{itemize}
-    \end{minipage}
-
+    \begin{longtable}[l]{p{\leftColSpace} p{\middleColSpace} p{\rightColSpace}}
+         & \textbf{Fully Autonomous Robot} \quad Mechatronics Class & \textbf{Jan 2017 - May 2017} \\
+    \end{longtable}
+    \begin{longtable}[l]{p{\leftColSpace} p{0.0\textwidth} p{\restOfColSpace}}
+        & \textbullet\ & Created tape-following robot programmed in C, using hierarchical state machine (HSM).\\
+        & \textbullet\ & Designed and soldered sensors. Used event driven programming.\\
+        & \textbullet\ & Robot detected tape, 2.0kHz infrared, and 27kHz track-wire.\\
+        & \textbullet\ & Robot navigated to ping-pong balls, loaded balls, and shot target.\\
+    \end{longtable}
     \vspace{\sectionSpace}
     \noindent\rule{\textwidth}{\lineThickness}
+
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Work Experience
 
     %%%% UC Santa Cruz
-    \noindent
-    \begin{minipage}[t]{\leftColSpace}
-        \noindent \textbf{Work}
-    \end{minipage}
-    \begin{minipage}[t]{\middleColSpace}
-        \noindent \textbf{Teaching Assistant} \quad UC Santa Cruz
-    \end{minipage}
-    \begin{minipage}[t]{\rightColSpace}
-        \noindent \textbf{Oct 2017 - Dec 2018}
-    \end{minipage}
-
-    \noindent
-    \begin{minipage}[t]{\leftColSpace}
-        \noindent \textbf{Experience}
-    \end{minipage}
-    \begin{minipage}[t]{\bigMiddleColSpace}
-        \begin{itemize}[noitemsep,topsep=0pt]\setlength{\parskip}{\subSectionSpace}
-            \item \textbf{Mechatronics}: Managed staff of 10 tutors in leading a lab of 60-90 students through the most difficult course in the UCSC school of engineering. Designed as “Engineering Boot-Camp”, student teams design and build an autonomous robot which perform a series of perception and actuation tasks. Students program a hierarchical state machine (HSM) in C and integrate a series of sensors and actuators culminating in a course competition.
-            \item \textbf{Sensing and Sensor Technology}: Students are taught how to interface with digital sensors and other peripherals. Subject content includes calibration and implementation of inertial measurment units, encoders, and ping sensors. Students write C code on PIC32 microcontroller to digitally filter out noise and calibrate sensors.
-            \item \textbf{Embedded C Programming on Microcontrollers}: Students are taught C syntax, data structures, interrupt subroutines, sorting algorithms, sensor debouncing, and system integration.
-        \end{itemize}
-    \end{minipage}
+    \begin{longtable}[l]{p{\leftColSpace} p{\middleColSpace} p{\rightColSpace}}
+        Work & \textbf{Teaching Assistant} \quad UC Santa Cruz & \textbf{Oct 2017 - Dec 2018} \\
+    \end{longtable}
+    \begin{longtable}[l]{p{\leftColSpace} p{0.0\textwidth} p{\restOfColSpace}}
+        Experience & \textbullet\ & \textbf{Mechatronics}: Managed staff of 10 tutors in leading a lab of 60-90 students through the most difficult course in the UCSC school of engineering. Designed as “Engineering Boot-Camp”, student teams design and build an autonomous robot which perform a series of perception and actuation tasks. Students program a hierarchical state machine (HSM) in C and integrate a series of sensors and actuators culminating in a course competition.\\
+        & \textbullet\ & \textbf{Sensing and Sensor Technology}: Students are taught how to interface with digital sensors and other peripherals. Subject content includes calibration and implementation of inertial measurment units, encoders, and ping sensors. Students write C code on PIC32 microcontroller to digitally filter out noise and calibrate sensors.\\
+        & \textbullet\ & \textbf{Embedded C Programming on Microcontrollers}: Students are taught C syntax, data structures, interrupt subroutines, sorting algorithms, sensor debouncing, and system integration.\\
+    \end{longtable}
 
     %%%% Inboard Technologies
+    \vspace{\sectionSpace}
     \begin{longtable}[l]{p{\leftColSpace} p{\middleColSpace} p{\rightColSpace}}
         & \textbf{Intern} \quad Inboard Technologies  & \textbf{Summer 2017} \\
     \end{longtable}
@@ -237,9 +148,9 @@
         & \textbullet\  & Tested and repaired lithium-ion batteries used for powering brush-less DC motors.\\ 
         & \textbullet\  & Designed, built, and programed a Dynamo-meter test-rig for board testing. Test-rig measured motor torque, board vibration, and simulated acceleration.\\
     \end{longtable}
-
     \vspace{\sectionSpace}
     \noindent\rule{\textwidth}{\lineThickness}
+
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Skills
     \begin{longtable}[l]{p{\leftColSpace} p{0.0\textwidth} p{\restOfColSpace}}
