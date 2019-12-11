@@ -12,44 +12,90 @@
 \setmainfont[Mapping=text-tex]{Calibri}
 
 \def \lineThickness {1pt}               % Line thickness for separating
+\def \mainColWidth {0.8\textwidth}		% Main column width
+\def \leftColWidth {0.05\textwidth}		% Left column width
 
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Header
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{flalign*}
+\begin{align*}
 	\text{\fontsize{30}{36}\selectfont \textbf{Pavlo Vlastos}} & & \hfill \begin{array}{lr}
 	\textbf{Email:} & \text{pavlogv@gmail.com}\\
 	\textbf{LinkedIn:} & \text{linkedin.com/in/pavlo-vlastos}\\
 	\textbf{Location:} & \text{Santa Cruz, California}\\
 	\textbf{Website:} & \text{www.pavl.org}
 	\end{array} 
-\end{flalign*}
+\end{align*}
 %
-\begin{flalign*}
+\begin{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Education
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	& \textbf{Education} & & \textbf{Pursuing PhD in Computer Engineering} & \textbf{September 2017 - Current} & \\
-	& & & \text{Emphasis in Robotics Engineering and Control Theory} & & \\
-	& & & \text{University of California, Santa Cruz} & & \\
-	& & & \begin{array}{l} 
-		\bullet \, \text{Courses in robotics, control theory, attitude estimation, and embedded programming} \\
-		\bullet \, \text{Research: developing low-cost ASVs for oceanography} \\
-		\bullet \, \text{Conducting validation of Complementary Filter-based AHRS.}
-	\end{array} & & \\
-	& & & \textbf{B.S. in Robotics Engineering} & \textbf{September 2013 - June 2017} & \\
-	& & & \text{Concentration in Robotics \& Control} & & \\
-	& & & \text{University of California, Santa Cruz} & & \\
-	& & & \begin{array}{l} 
-	\bullet \, \text{Courses in mechatronics, applied linear algebra, and feedback control}
-	\end{array} & & \\
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Work Experience
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	& \textbf{Work Experience} & & \textbf{COSMOS California Summer School for Mathematics \& Science} & \textbf{Summer 2018} & \\
-	& & & \text{Embedded Programming Teacher} & &\\
-	& & & \textbf{Inboard Technologies} & \textbf{Summer 2017} & \\
-	& & & \text{Electrical Engineer Intern} & &\\
-\end{flalign*}
+	&
+	\parbox{\leftColWidth}{%
+		\textbf{Education}
+	}%
+	&
+	\left[\begin{array}{l}
+		\parbox{\mainColWidth}{%
+			\textbf{Pursuing PhD in Computer Engineering} \hfill \textbf{September 2017 - Current} 
+		}%
+		\\
+		\begin{array}{l} 
+			\text{Emphasis in Robotics Engineering and Control Theory}\\
+			\text{University of California, Santa Cruz} \\
+			\parbox{\mainColWidth}{%
+				\textbullet\ Courses in robotics, control theory, attitude estimation, and embedded programming.
+			}% 
+			\\
+			\parbox{\mainColWidth}{%
+				\textbullet\ Research: Developing low-cost ASVs for oceanography. Conducting validation of Complementary Filter-based AHRS.
+			}%
+		\end{array}\\
+		\\
+		\parbox{\mainColWidth}{%
+			\textbf{B.S. in Robotics Engineering} \hfill \textbf{September 2013 - June 2017}
+		}%
+		\\
+		\begin{array}{l}
+			\text{Concentration in Robotics \& Control} \\
+			\text{University of California, Santa Cruz} \\
+			\parbox{\mainColWidth}{%
+				\textbullet\ Courses in mechatronics, applied linear algebra, and feedback control.
+			}%
+		\end{array}
+	\end{array}\right.\\
+	&\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Work Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	&
+	\begin{array}{l} 
+	\parbox{\leftColWidth}{%
+		\textbf{Work \\ Experience}
+	}%
+	\end{array}
+	&
+	\left[\begin{array}{l}
+		\parbox{\mainColWidth}{%
+			\textbf{University of California at Santa Cruz} \hfill \textbf{September 2017 - Current}
+		}%
+		\\
+		\begin{array}{l}
+			\text{Teaching Assistant} \\
+			\parbox{\mainColWidth}{%
+				\textbullet\ \textbf{Mechatronics} (Fall 2017): Led instructional lab sections teaching students about event-driven programming, hierarchical state machines, sensor design, and system integration.
+			}%
+		\end{array}\\
+		\\
+		\parbox{\mainColWidth}{%
+			\textbf{COSMOS California Summer School for Mathematics \& Science}  \hfill \textbf{Summer 2018}
+		}%
+		\\
+		\parbox{\mainColWidth}{%
+			\textbf{Inboard Technologies} \hfill \textbf{Summer 2017}
+		}%
+	\end{array}\right. \\
+\end{align*}
 \end{document}
