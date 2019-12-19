@@ -15,40 +15,35 @@
 \def \lineThickness {1pt}               % Line thickness for separating
 \def \nameColWidth {0.5\textwidth}		% Name column width
 \def \mainColWidth {0.8\textwidth}		% Main column width
-\def \leftColWidth {0.05\textwidth}		% Left column width
+\def \leftColWidth {0.125\textwidth}		% Left column width
 
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Header
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{align*}
-	&
-	\parbox{\nameColWidth}{%
+	\parbox[t]{\nameColWidth}{%
 		\text{\fontsize{30}{36}\selectfont \textbf{Pavlo Vlastos}}
 	}%
 	&
-	\left[\begin{array}{lr}
+	\begin{array}{|lr}
 		\textbf{Email:} & \text{pavlogv@gmail.com}\\
 		\textbf{LinkedIn:} & \text{linkedin.com/in/pavlo-vlastos}\\
 		\textbf{Location:} & \text{Santa Cruz, California}\\
 		\textbf{Website:} & \text{www.pavl.org}
 	\end{array}
-	\right.
-	&
 \end{align*}
-%
 \begin{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Education
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	&
 	\begin{array}[t]{l}
 	\parbox[t]{\leftColWidth}{%
-		\colorbox{black}{\color{white}{\textbf{Education}}}
+	\colorbox{black}{\color{white}{\textbf{Education}}}
 	}%
 	\end{array}
 	&
-	\begin{array}[t]{l}
+	\begin{array}[t]{|l}
 		\parbox[t]{\mainColWidth}{%
 			\textbf{PhD Student in Computer Engineering} \hfill \textbf{September 2017 - Current} \\
 			Emphasis in Robotics Engineering and Control Theory\\
@@ -57,9 +52,6 @@
 			\item Courses in robotics, control theory, attitude estimation, and embedded programming.
 			\item Research: Developing low-cost ASVs for oceanography. Conducting validation of Complementary Filter-based AHRS.
 			\end{itemize}
-		}%
-		\\
-		\parbox[t]{\mainColWidth}{%
 			\textbf{B.S. in Robotics Engineering} \hfill \textbf{September 2013 - June 2017}\\
 			Concentration in Robotics \& Control\\
 			University of California, Santa Cruz
@@ -68,18 +60,18 @@
 			\end{itemize}
 		}%
 	\end{array}
-	&\\
+\end{align*}
+\begin{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Work Experience
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	&
 	\begin{array}[t]{l} 
 	\parbox[t]{\leftColWidth}{%
-		\colorbox{black}{\color{white}{\textbf{Work}}} \\ \colorbox{black}{\color{white}{\textbf{Experience}}}
+		\colorbox{black}{\color{white}{\textbf{Work Experience}}}
 	}%
 	\end{array}
 	&
-	\begin{array}[t]{l}
+	\begin{array}[t]{|l}
 		\parbox[t]{\mainColWidth}{%
 			\textbf{University of California at Santa Cruz} \hfill \textbf{September 2017 - Current}\\
 			\quad Teaching Assistant
@@ -109,18 +101,17 @@
 		\end{itemize}
 		}%
 	\end{array}
-	&\\
+	\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Projects
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	&
 	\begin{array}[t]{l} 
 	\parbox[t]{\leftColWidth}{%
 		\colorbox{black}{\color{white}{\textbf{Projects}}}
 	}%
 	\end{array}
 	&
-	\begin{array}[t]{l}
+	\begin{array}[t]{|l}
 	\parbox[t]{\mainColWidth}{%
 		\textbf{Ball-Balancing Robot} \hfill \textbf{January 2017 - June 2017}\\
 		\quad Senior Design Project
@@ -140,18 +131,17 @@
 	}%
 	\\
 	\end{array}
-	&\\
+	\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Skills
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	&
 	\begin{array}[t]{l} 
 	\parbox[t]{\leftColWidth}{%
 		\colorbox{black}{\color{white}{\textbf{Skills}}}
 	}%
 	\end{array}
 	&
-	\begin{array}[t]{l}
+	\begin{array}[t]{|l}
 	\parbox[t]{\mainColWidth}{%
 		\textbf{Software Engineering:} C, Python, Java, Embedded Software Design, MIPS Assembly\\
 		\textbf{Computer Engineering:} Computer Architecture, Digital Logic Design
@@ -162,6 +152,6 @@
 		\textbf{System Identification:} ARX, ARMAX, Recursive/Weighted Least-Squares (with/without forgetting factor)
 	}%
 	\end{array}\\
-	&\\
+	\\
 \end{align*}
 \end{document}
