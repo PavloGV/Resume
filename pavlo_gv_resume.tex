@@ -15,35 +15,42 @@
 \def \lineThickness {1pt}               % Line thickness for separating
 \def \nameColWidth {0.5\textwidth}		% Name column width
 \def \mainColWidth {0.8\textwidth}		% Main column width
-\def \leftColWidth {0.125\textwidth}		% Left column width
+\def \leftColWidth {0.1\textwidth}		% Left column width
 
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Header
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{align*}
-	\parbox[t]{\nameColWidth}{%
-		\text{\fontsize{30}{36}\selectfont \textbf{Pavlo Vlastos}}
+	&
+	\begin{array}{ll}
+	\parbox[t]{\leftColWidth}{%
+		\text{\fontsize{40}{48}\selectfont \textbf{Pavlo Vlastos}}
 	}%
 	&
-	\begin{array}{|lr}
+	\parbox{\mainColWidth}{%
+		\hfill $\begin{array}[t]{ll}
+		\parbox[c]{\leftColWidth}{%
+			\hfill\colorbox{black}{\color{white}{\textbf{Contact}}}
+		}%
+		&
+		\begin{array}[t]{lr}
 		\textbf{Email:} & \text{pavlogv@gmail.com}\\
 		\textbf{LinkedIn:} & \text{linkedin.com/in/pavlo-vlastos}\\
 		\textbf{Location:} & \text{Santa Cruz, California}\\
-		\textbf{Website:} & \text{www.pavl.org}
+		\textbf{Website:} & \text{www.pavl.org}\\
+		\end{array}
+		\end{array}$
+	}%
 	\end{array}
 \end{align*}
 \begin{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Education
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{array}[t]{l}
-	\parbox[t]{\leftColWidth}{%
-	\colorbox{black}{\color{white}{\textbf{Education}}}
-	}%
-	\end{array}
-	&
-	\begin{array}[t]{|l}
+	\begin{array}[t]{rl}
+		\colorbox{black}{\color{white}{\textbf{Education}}}
+		&
 		\parbox[t]{\mainColWidth}{%
 			\textbf{PhD Student in Computer Engineering} \hfill \textbf{September 2017 - Current} \\
 			Emphasis in Robotics Engineering and Control Theory\\
@@ -59,19 +66,12 @@
 			\item Courses in mechatronics, applied linear algebra, and feedback control.
 			\end{itemize}
 		}%
-	\end{array}
-\end{align*}
-\begin{align*}
+		\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Work Experience
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{array}[t]{l} 
-	\parbox[t]{\leftColWidth}{%
 		\colorbox{black}{\color{white}{\textbf{Work Experience}}}
-	}%
-	\end{array}
-	&
-	\begin{array}[t]{|l}
+		&
 		\parbox[t]{\mainColWidth}{%
 			\textbf{University of California at Santa Cruz} \hfill \textbf{September 2017 - Current}\\
 			\quad Teaching Assistant
@@ -81,37 +81,25 @@
 			\item \textbf{Embedded Systems and C Programming} (Spring \& Summer 2018, Summer 2019) Topics included: basic syntax, pointers, memory allocation, hardware interrupt sub-routines, debouncing, and basic file IO.
 			\item \textbf{Microcontroller System Design} (Fall 2019) Topics included: Interrupt-driven UART, I2C, SPI, packet systems, FIR filters, interfacing with external EEPROM, encoders, an H-Bridge, and interupt-driven PID loops for controlling motor rate and position. 
 			\end{itemize}
-		}%
-		\\
-		\parbox[t]{\mainColWidth}{%
 			\textbf{COSMOS California Summer School for Mathematics \& Science}  \hfill \textbf{Summer 2018}\\
 			\quad Tutor
 			\begin{itemize}[noitemsep,topsep=0pt]
 			\item Taught students state-machine programming in C of small two-wheeled robots with bump-sensors and photo-resistors for shadow-finding.
 			\end{itemize}
+			\textbf{Inboard Technologies} \hfill \textbf{Summer 2017}\\
+			\quad Electrical Engineering Intern
+			\begin{itemize}[noitemsep,topsep=0pt]
+			\item Designed and implemented test-rig dynamometer for BLDC motors for electric skateboard.
+			\item Repaired lithium-ion battery packs
+			\item Refurbished battery management systems
+			\end{itemize}
 		}%
-		\\
-		\parbox[t]{\mainColWidth}{%
-		\textbf{Inboard Technologies} \hfill \textbf{Summer 2017}\\
-		\quad Electrical Engineering Intern
-		\begin{itemize}[noitemsep,topsep=0pt]
-		\item Designed and implemented test-rig dynamometer for BLDC motors for electric skateboard.
-		\item Repaired lithium-ion battery packs
-		\item Refurbished battery management systems
-		\end{itemize}
-		}%
-	\end{array}
 	\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Projects
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{array}[t]{l} 
-	\parbox[t]{\leftColWidth}{%
 		\colorbox{black}{\color{white}{\textbf{Projects}}}
-	}%
-	\end{array}
 	&
-	\begin{array}[t]{|l}
 	\parbox[t]{\mainColWidth}{%
 		\textbf{Ball-Balancing Robot} \hfill \textbf{January 2017 - June 2017}\\
 		\quad Senior Design Project
@@ -119,39 +107,28 @@
 		\item Created 5ft tall robot, capable of balancing on top of a large basketball.
 		\item Implmented embedded PID position control of BLDC motors with encoders, PID loop for balancing on ball using IMU, and  embedded quaternion library.
 		\end{itemize}
-	}%
-	\\
-	\parbox[t]{\mainColWidth}{%
 		\textbf{Autonomous Boat for Oceanography}  \hfill \textbf{Summer 2018}\\
 		\quad PhD Research
 		\begin{itemize}[noitemsep,topsep=0pt]
-		\item Creating low-cost platform for oceanography
-		\item 
+		\item Creating autonomous surface vehicle for low-cost oceanography
+		\item Combines attitude estimation and GPS for waypoint to waypoint navigation
 		\end{itemize}
 	}%
-	\\
-	\end{array}
-	\\
+\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Skills
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{array}[t]{l} 
-	\parbox[t]{\leftColWidth}{%
 		\colorbox{black}{\color{white}{\textbf{Skills}}}
-	}%
-	\end{array}
 	&
-	\begin{array}[t]{|l}
 	\parbox[t]{\mainColWidth}{%
 		\textbf{Software Engineering:} C, Python, Java, Embedded Software Design, MIPS Assembly\\
-		\textbf{Computer Engineering:} Computer Architecture, Digital Logic Design
+		\textbf{Computer Engineering:} Computer Architecture, Digital Logic Design\\
 		\textbf{Embedded Systems:} PIC, CAN, I2C, UART, SPI, sensor integration, Input Capture / Output Compare, Free-Running Timers, Timer Interrupts, ADC, protocol debugging. Discretized PID control loops (All non-blocking and interrupt-driven).\\
-		\textbf{Robotics Engineering:} Sensor Fusion, Feedback Control, Sensor Design, Analog Filter Design, Mechatronic System Design
+		\textbf{Robotics Engineering:} Sensor Fusion, Feedback Control, Sensor Design, Analog Filter Design, Mechatronic System Design\\
 		\textbf{Software/Libraries:} Windows, Linux/Unix, MATLAB, Eagle CAD, Solid Works, Fusion 360\\
 		\textbf{Computational \& Applied Mathematics:} Kalman Filters, Control Theory, Digital Control Design, Linear Dynamical Systems, Frequency Domain and State Space Analysis\\
-		\textbf{System Identification:} ARX, ARMAX, Recursive/Weighted Least-Squares (with/without forgetting factor)
+		\textbf{System Identification:} ARX, ARMAX, Recursive/Weighted Least-Squares (with/without forgetting factor)\\
 	}%
-	\end{array}\\
-	\\
+	\end{array}
 \end{align*}
 \end{document}
