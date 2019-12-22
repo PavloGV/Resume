@@ -13,18 +13,24 @@
 \setmainfont[Mapping=text-tex]{Calibri}
 
 \def \lineThickness {1pt}               % Line thickness for separating
-\def \nameColWidth {0.5\textwidth}		% Name column width
+\def \nameColWidth {0.165\textwidth}		% Name column width
 \def \mainColWidth {0.8\textwidth}		% Main column width
 \def \leftColWidth {0.1\textwidth}		% Left column width
 
+\allowdisplaybreaks
+
 \begin{document}
+	\setlength{\abovedisplayskip}{0pt}
+	\setlength{\belowdisplayskip}{0pt}
+	\setlength{\abovedisplayshortskip}{0pt}
+	\setlength{\belowdisplayshortskip}{0pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Header
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{align*}
 	&
 	\begin{array}{ll}
-	\parbox[t]{\leftColWidth}{%
+	\parbox[t]{\nameColWidth}{%
 		\text{\fontsize{40}{48}\selectfont \textbf{Pavlo Vlastos}}
 	}%
 	&
@@ -48,9 +54,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Education
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{array}[t]{rl}
 		\colorbox{black}{\color{white}{\textbf{Education}}}
-		&
+		& &
 		\parbox[t]{\mainColWidth}{%
 			\textbf{PhD Student in Computer Engineering} \hfill \textbf{September 2017 - Current} \\
 			Emphasis in Robotics Engineering and Control Theory\\
@@ -66,12 +71,12 @@
 			\item Courses in mechatronics, applied linear algebra, and feedback control.
 			\end{itemize}
 		}%
-		\\
+	\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Work Experience
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		\colorbox{black}{\color{white}{\textbf{Work Experience}}}
-		&
+		& &
 		\parbox[t]{\mainColWidth}{%
 			\textbf{University of California at Santa Cruz} \hfill \textbf{September 2017 - Current}\\
 			\quad Teaching Assistant
@@ -98,20 +103,27 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Projects
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\colorbox{black}{\color{white}{\textbf{Projects}}}
-	&
+	\colorbox{black}{\color{white}{\textbf{Projects}}}
+	& &
 	\parbox[t]{\mainColWidth}{%
+		\textbf{Autonomous Surface Vehicle for Oceanography}  \hfill \textbf{Fall 2018 - current}\\
+		\quad PhD Research
+		\begin{itemize}[noitemsep,topsep=0pt]
+		\item Creating autonomous surface vehicle for low-cost oceanography
+		\item Combines attitude estimation and GPS for waypoint to waypoint navigation
+		\item Sensor fusion of accelerometers, magnetometers, and gyroscopes with embedded complementary filter.
+		\end{itemize}
 		\textbf{Ball-Balancing Robot} \hfill \textbf{January 2017 - June 2017}\\
 		\quad Senior Design Project
 		\begin{itemize}[noitemsep,topsep=0pt]
 		\item Created 5ft tall robot, capable of balancing on top of a large basketball.
 		\item Implmented embedded PID position control of BLDC motors with encoders, PID loop for balancing on ball using IMU, and  embedded quaternion library.
 		\end{itemize}
-		\textbf{Autonomous Boat for Oceanography}  \hfill \textbf{Summer 2018}\\
-		\quad PhD Research
+		\textbf{Autonomous Robot} \hfill \textbf{Fall 2015}\\
+		\quad Final Project for Mechatronics Class 
 		\begin{itemize}[noitemsep,topsep=0pt]
-		\item Creating autonomous surface vehicle for low-cost oceanography
-		\item Combines attitude estimation and GPS for waypoint to waypoint navigation
+		\item Designed and programmed robot to locate ping-pong balls on field. Robot would fire balls at opponent robot, and then locate safe zone designated by 27kHz track-wire.
+		\item Programmed hierarchical state machine in C, based on event-driven programming.
 		\end{itemize}
 	}%
 \\
@@ -119,16 +131,21 @@
 %% Skills
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		\colorbox{black}{\color{white}{\textbf{Skills}}}
-	&
+	& &
 	\parbox[t]{\mainColWidth}{%
 		\textbf{Software Engineering:} C, Python, Java, Embedded Software Design, MIPS Assembly\\
 		\textbf{Computer Engineering:} Computer Architecture, Digital Logic Design\\
 		\textbf{Embedded Systems:} PIC, CAN, I2C, UART, SPI, sensor integration, Input Capture / Output Compare, Free-Running Timers, Timer Interrupts, ADC, protocol debugging. Discretized PID control loops (All non-blocking and interrupt-driven).\\
 		\textbf{Robotics Engineering:} Sensor Fusion, Feedback Control, Sensor Design, Analog Filter Design, Mechatronic System Design\\
-		\textbf{Software/Libraries:} Windows, Linux/Unix, MATLAB, Eagle CAD, Solid Works, Fusion 360\\
-		\textbf{Computational \& Applied Mathematics:} Kalman Filters, Control Theory, Digital Control Design, Linear Dynamical Systems, Frequency Domain and State Space Analysis\\
-		\textbf{System Identification:} ARX, ARMAX, Recursive/Weighted Least-Squares (with/without forgetting factor)\\
+		\textbf{Software/Libraries:} Linux/Unix, Windows, Mac OS, MATLAB, Eagle CAD, Solid Works, Fusion 360\\
 	}%
-	\end{array}
+\\
+% for page break ... until better way is found
+	\colorbox{black}{\color{white}{\textbf{Skills}}}
+	& & 
+	\parbox[t]{\mainColWidth}{%
+		\textbf{Computational \& Applied Mathematics:} Kalman Filters, Control Theory, Digital Control Design, Linear Dynamical Systems, Frequency Domain and State Space Analysis\\
+	\textbf{System Identification:} ARX, ARMAX, Recursive/Weighted Least-Squares (with/without forgetting factor)\\
+}%
 \end{align*}
 \end{document}
