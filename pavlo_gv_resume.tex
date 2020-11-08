@@ -10,7 +10,7 @@
 
 \usepackage[margin=0.5cm]{geometry} % Set margins
 
-\setmainfont[Mapping=text-tex]{Calibri}
+\setmainfont{Calibri}
 
 \def \lineThickness {1pt}               % Line thickness for separating
 \def \nameColWidth {0.66\textwidth}		% Name column width
@@ -30,17 +30,18 @@
 \begin{align*}
 	&
 	\begin{array}{ll}
-	\parbox[t]{\nameColWidth}{%
-		\text{\fontsize{40}{48}\selectfont \textbf{Pavlo Vlastos}}\\
-		\text{\ Robotics, Controls, \& Embedded Systems Engineer}
+	\parbox[t]{0.55\textwidth}{%
+		\text{\fontsize{40}{48}\selectfont \ \textbf{Pavlo Vlastos}}\\
+%		\text{\ Electrical and Computer Engineer}
 	}%
 	&
 	\parbox{\mainColWidth}{%
-		$\begin{array}[t]{lr}
-		\textbf{Email:} & \text{pavlogv@gmail.com}\\
+		$\begin{array}[t]{ll}
+		\textbf{Email:} & \text{pvlastos@ucsc.edu, pavlogv@gmail.com}\\
 		\textbf{LinkedIn:} & \text{linkedin.com/in/pavlo-vlastos}\\
 		\textbf{Location:} & \text{Santa Cruz, California}\\
 		\textbf{Website:} & \text{www.pavl.org}\\
+		\textbf{GPA:} & \textbf{4.0} \ \text{(total: 3.3)}
 		\end{array}$
 	}%
 	\end{array}
@@ -56,16 +57,15 @@
 		}
 		& &
 		\parbox[t]{\mainColWidth}{%
-			\textbf{PhD Student in Computer Engineering} \hfill \textbf{September 2017 - Current} \\
-			Emphasis in Robotics Engineering and Control Theory\\
+			\textbf{PhD Candidate in Computer Engineering} \hfill \textbf{September 2017 - Current} \\
+			Emphasis in Robotics and Control Theory\\
 			University of California, Santa Cruz
 			\begin{itemize}[noitemsep,topsep=0pt]
-			\item Courses in robotics, control theory, attitude estimation, and embedded programming.
+			\item Courses in robotics, MAV Aerodynamics, control theory, attitude estimation, and embedded programming.
 			\item Research: Developing low-cost ASVs for oceanography. 
 			\item Conducting validation of Complementary Filter-based AHRS.
 			\end{itemize}
 			\textbf{B.S. in Robotics Engineering} \hfill \textbf{September 2013 - June 2017}\\
-			Concentration in Robotics \& Control\\
 			University of California, Santa Cruz
 			\begin{itemize}[noitemsep,topsep=0pt]
 			\item Courses in mechatronics, applied linear algebra, and feedback control.
@@ -115,7 +115,7 @@
 	& &
 	\parbox[t]{\mainColWidth}{%
 		\textbf{Autonomous Surface Vehicle for Oceanography}  \hfill \textbf{Fall 2018 - current}\\
-		\quad PhD Research
+		\quad PhD research on guidance, navigation, and control (GNC) of a small electric boat.
 		\begin{itemize}[noitemsep,topsep=0pt]
 		\item Attitude estimation and GPS for waypoint-to-waypoint navigation
 		\item Sensor fusion of accelerometers, magnetometers, and gyroscopes with embedded complementary filter.
@@ -126,10 +126,17 @@
 		\item 5ft tall robot, capable of balancing on top of a large basketball.
 		\item Implmented embedded PID position control of BLDC motors with encoders, PID loop for balancing on ball using IMU, and  embedded quaternion library.
 		\end{itemize}
+		\textbf{Linear Electromagnetic Rail Accelerator (Rail Gun)} \hfill \textbf{March 2020 - current}\\
+		\quad Personal Project
+		\begin{itemize}[noitemsep,topsep=0pt]
+		\item Designed accelerator support structure, high-energy discharge circuitry
+		\item Modeled projectile for acceleration control with capacitor bank
+		\item Using LIDAR range finding for projectile/payload position feedback control
+		\end{itemize}
 		\textbf{Autonomous Robot} \hfill \textbf{Fall 2015}\\
 		\quad Final Project for Mechatronics Class 
 		\begin{itemize}[noitemsep,topsep=0pt]
-		\item Programmed hierarchical state machine in C, based on event-driven programming.
+		\item Programmed hierarchical state machine (HSM) in C, based on event-driven programming.
 		\item Robot capable of locating ping-pong balls on field, firing balls at opponent robot, and locating safe zone.
 		\item Custom made IR, trackwire, bumper, and tape tracking sensors
 		\end{itemize}
@@ -145,21 +152,63 @@
 	}
 	& &
 	\parbox[t]{\mainColWidth}{%
-		\textbf{Software Engineering:} C, Python, Java, Embedded Software Design, MIPS Assembly\\
-		\textbf{Computer Engineering:} Computer Architecture, Digital Logic Design\\
-		\textbf{Embedded Systems:} PIC, CAN, I2C, UART, SPI, sensor integration, Input Capture / Output Compare, Free-Running Timers, Timer Interrupts, ADC, protocol debugging. Discretized PID control loops (non-blocking and interrupt-driven).\\
-		\textbf{Robotics Engineering:} Sensor Fusion, Feedback Control, Sensor Design, Analog Filter Design, Mechatronic Design\\
-		\textbf{Software/Libraries:} Linux/Unix, Windows, Mac OS, MATLAB, Eagle CAD, Solid Works, Fusion 360\\
-		\textbf{Computational \& Applied Mathematics:} Kalman Filters, Control Theory, Digital Control Design, Linear Dynamical Systems, Frequency Domain and State Space Analysis\\
-		\textbf{System Identification:} ARX, ARMAX, Recursive/Weighted Least-Squares (with/without forgetting factor)\\
+		\textbf{Software Engineering:} \textbf{Proficient}: C and Embedded Software Design, \textbf{Competent}: MATLAB, Python, \textbf{Advanced-Beginner}: Simulink, \textbf{Novice}: Java, C++, MIPS Assembly\\
+		\textbf{Embedded Systems:} \textbf{Proficient}: PIC32, I2C, UART, SPI, NMEA, CAN, sensor integration, Input Capture / Output Compare, Free-Running Timers, Timer Interrupts, ADC, protocol debugging. Discretized PID control loops (non-blocking and interrupt-driven), MAVLink.\\
+%		\textbf{Robotics Engineering:} Sensor Fusion, Feedback Control, Sensor Design, Analog Filter Design, Mechatronic Design\\
+%		\textbf{Software/Libraries:} \textbf{Proficient}: Mac OS, \textbf{Competent}:Linux/Unix, Windows, Eagle CAD, Solid Works, Fusion 360\\
+%		\textbf{Computational \& Applied Mathematics:} Extended Kalman Filters, Control Theory, Digital Control Design, Linear Dynamical Systems, Frequency Domain and State Space Analysis\\
+%		\textbf{System Identification:} ARX, ARMAX, Recursive/Weighted Least-Squares (with/without forgetting factor)\\
 	}%
 \\
-%% for page break ... until better way is found
-%	\colorbox{black}{\color{white}{\textbf{Skills}}}
-%	& & 
-%	\parbox[t]{\mainColWidth}{%
-%		\textbf{Computational \& Applied Mathematics:} Kalman Filters, Control Theory, Digital Control Design, Linear Dynamical Systems, Frequency Domain and State Space Analysis\\
-%		\textbf{System Identification:} ARX, ARMAX, Recursive/Weighted Least-Squares (with/without forgetting factor)\\
-%}%
+% for page break ... until better way is found
+	\colorbox{black}{\color{white}{
+			\parbox[t]{\leftColWidth}{%
+				\textbf{Skills} continued}
+		}%
+	}
+	& & 
+	\parbox[t]{\mainColWidth}{%
+		\textbf{Robotics Engineering:} Sensor Fusion, GPS, IMU, Feedback Control, Sensor Design, Analog Filter Design, Mechatronic Design\\
+		\textbf{Software/Libraries:} \textbf{Proficient}: Mac OS, \textbf{Competent}: Linux/Unix, Windows, Eagle CAD, Solid Works, Fusion 360\\
+		\textbf{Computational \& Applied Mathematics:} Extended Kalman Filters, Control Theory, Digital Control Design, Linear Dynamical Systems, Frequency Domain and State Space Analysis\\
+		\textbf{System Identification:} ARX, ARMAX, Recursive/Weighted Least-Squares (with/without forgetting factor)\\
+		\textbf{Hardware}: \textbf{Proficient}: Oscilloscopes, Digital Multi-Meters, \textbf{Competent}: Logic Analyzers, \textbf{Novice}: Spectrum Analyzers.
+}%
+\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Honors and Awards
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\colorbox{black}{\color{white}{
+		\parbox[t]{\leftColWidth}{%
+			\textbf{Honors \& Awards}}
+	}%
+}
+& &
+\parbox[t]{\mainColWidth}{%
+	\textbf{Achievement Rewards for College Scientists (ARCS) Foundation Recipient}  \hfill \textbf{Spring 2020}\\
+	\quad For academic excellence in studying STEM\\
+	\textbf{National I-Corps Program Recommendation}  \hfill \textbf{Spring 2020}\\
+	\quad For exemplary performance in I-Corps short course
+	\begin{itemize}[noitemsep,topsep=0pt]
+	\item Formed small team to interview industry experts to determine the market viability of rail accelerator g-shock testing for custom and off-the-shelf electronics components.
+	\item Developed business models, business model canvases, value propositions, and supply chains models.
+	\item Identified potential customers, competitors, 
+	\end{itemize}
+}%
+\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Publications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\colorbox{black}{\color{white}{
+		\parbox[t]{\leftColWidth}{%
+			\textbf{Publications}}
+	}%
+}
+& &
+\parbox[t]{\mainColWidth}{%
+	\textbf{Low-Cost Validation for Complementary Filter-Based AHRS}  \hfill \textbf{Summer 2020}\\
+	\quad 2020 IEEE/ION Position, Location and Navigation Symposium (PLANS)\\
+	Developed procedure to validate a complementary filter-based attitude and heading reference system for an off-the-shelf sensor-head using a prototype, low-cost validation apparatus and comparing course over ground measurements from GPS.
+}%
 \end{align*}
 \end{document}
